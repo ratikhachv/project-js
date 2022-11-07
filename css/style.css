@@ -1,19 +1,83 @@
-.container{
-    background-color: aqua;
-    height: 100vh;
-    min-height: 3530px;
+.container {
+  /* background-color: aqua; */
+  height: 100vh;
+  min-height: 3530px;
 }
-.language-signup{
-    display: flex;   
-    justify-content: space-between;
+
+.language-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.language-btn{
-    background-color: white;
-    color: black;
-    border: none;
+
+hr {
+  opacity: 0.1;
+  margin-top: 0%;
 }
-.dropdown-menu li{
-    display: flex;
-    gap: 10%;
-    align-items: center;
+
+.language-btn {
+  background-color: white;
+  color: black;
+  border: none;
 }
+
+.dropdown-menu li {
+  display: flex;
+  gap: 10%;
+  align-items: center;
+}
+
+.account-sign {
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+#navi {
+  background-color: white;
+}
+
+.nav-link {
+  color: #8172D5;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: white;
+}
+
+.search-inp {
+  transition-property: width;
+  transition-duration: 3s;
+  border: none;
+  background-color: #F2F5F8;
+  height: 24px;
+  padding: 0;
+  width: 15vw;
+}
+
+.myStyle {
+  width: 0px;
+  transition: width 2s;
+}
+
+.search-icon {
+  background-color: #8172D5;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 2px;
+}/*# sourceMappingURL=style.css.map */

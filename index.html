@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.scss">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -33,24 +34,56 @@
                     <span style = "color: #758BFD; font-size: 12px; ">ACCOUNT</span>
                 </div>
             </div>
+            <hr>
             <!-- აქ უნდა გადაყავდე მეოთხე სექციაში თუ მეხუთეში -->
             <div class="nav-logo">
                 <div class="logo">
-    
+                    <img src="./imgs/allportLogo.png" alt="">
                 </div>
-                <nav>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <div class="search">
-                            <input type="teax" placeholder="search">
-                            <!-- img -->
-                        </div>
-                    </ul>
-                </nav>
+                <nav class="navbar navbar-expand-lg" id="navi">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >Department services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Job Tools                           
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Who We Are                         
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Covid Info</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search" class="search-inp">
+                        <img src="./imgs/search Icon2.png" alt="" class="search-icon">
+                    </div>
+                  </nav>
             </div>
         </header>
     </div>
@@ -58,5 +91,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
