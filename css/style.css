@@ -3,3 +3,17 @@
     height: 100vh;
     min-height: 3530px;
 }
+.language-signup{
+    display: flex;   
+    justify-content: space-between;
+}
+.language-btn{
+    background-color: white;
+    color: black;
+    border: none;
+}
+.dropdown-menu li{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
