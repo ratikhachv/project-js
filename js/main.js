@@ -171,3 +171,13 @@ function clickOnEachArrow(){
     }
 }
 clickOnEachArrow();
+
+
+// collapsing  register form
+
+let regBtn = document.querySelector(".reg-4-free");
+let regForm = document.querySelector(".register-form");
+
+regBtn.addEventListener("click", function(){
+    regForm.classList.toggle("reg-form-appear")
+})

@@ -291,4 +291,89 @@ hr {
   position: absolute;
   background-color: white;
   border: 1px solid black;
+}
+
+.sect-4 {
+  width: 100%;
+  height: 9%;
+  background-color: bisque;
+  display: flex;
+}
+
+.that-pic-div {
+  width: 50%;
+  height: 100%;
+}
+
+.that-pic-div img {
+  width: 100%;
+  height: 100%;
+}
+
+.sect-4-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  gap: 10%;
+  overflow: visible;
+}
+
+.see-all {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 22%;
+  font-size: xx-small;
+}
+
+.register-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 75%;
+  width: 100%;
+}
+
+.register-div button {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.register-form {
+  height: 0px;
+  width: 0px;
+  transition: height width 1s ease-in;
+  overflow: hidden;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+}
+
+.graph input {
+  max-width: 100%;
+}
+
+.reg-form-appear {
+  width: 50%;
+  height: 70%;
+  overflow: visible;
 }/*# sourceMappingURL=style.css.map */
