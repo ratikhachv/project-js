@@ -295,27 +295,80 @@ hr{
     transition: height width 1s ease-in;
     overflow: hidden;
 }
-  .registerbtn {
-    background-color: #04AA6D;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.5;
-  }
-  
-  .registerbtn:hover {
-    opacity: 1;
-  }
-  .graph{
+.registerbtn {
+background-color: #04AA6D;
+color: white;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.5;
+}
+
+.registerbtn:hover {
+opacity: 1;
+}
+.graph{
+display: flex;
+flex-direction: column;
+}
+.graph input{
+max-width: 100%;
+}
+.reg-form-appear{
+width: 50%;
+height: 70%;
+overflow: visible;
+}
+
+.sect-5{
+width: 82.4%;
+height: 7.2%;
+display: flex;
+gap: 1.65%;
+margin: auto;
+}
+.sect-5-left{
+background-color: lightblue;
+width: 49%;
+min-width: none;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: hidden;
+transition: width overflow 1s;
+    img{
+        width: 52vw;
+        max-width: 750px;
+        height: 62%;
+    }
+
+}
+.sect-5-right{
+    background-color: magenta;
+    width: 49%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: width overflow 1s;
+        img{
+            width: 52vw;
+            max-width: 750px;
+            height: 62%;
+            align-self: flex-end;
+        }
+        p{
+            word-break: break-all;
+        }
   }
-  .graph input{
-    max-width: 100%;
-  }
-  .reg-form-appear{
-    width: 50%;
-    height: 70%;
-    overflow: visible;
-  }
+.btn-div{
+display: flex;
+width: 100%;
+justify-content: space-between;
+    button{
+        display: none;
+    }
+    p{
+        max-width: 80%;
+    }
+}

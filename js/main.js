@@ -181,3 +181,69 @@ let regForm = document.querySelector(".register-form");
 regBtn.addEventListener("click", function(){
     regForm.classList.toggle("reg-form-appear")
 })
+
+//uncollapsing photos
+
+let collapsedDivL = document.querySelector(".sect-5-left")
+let btnLeft = document.querySelector(".btn-left")
+let btnRight = document.querySelector(".btn-right")
+
+let clickedLeft = false;
+let collapsedDivR = document.querySelector(".sect-5-right")
+
+collapsedDivL.addEventListener("click", function(){
+    if(clickedLeft){
+        collapsedDivL.style.width = "49%"
+        collapsedDivL.style.minWidth = "1px"
+        clickedLeft = false;
+        btnLeft.style.display= "none";
+        console.log("clickedLeft",clickedLeft, "clickedRight", clickedRight);
+        if(clickedRight == false){
+            collapsedDivR.style.width = "49%"
+            collapsedDivR.style.minWidth = "1px"
+            btnRight.style.display= "none";
+        }
+    }else{
+        collapsedDivL.style.minWidth = "max-content"
+        btnLeft.style.display= "block";
+        btnRight.style.display= "none";
+        clickedLeft = true;
+        console.log("clickedLeft",clickedLeft, "clickedRight", clickedRight);
+        if (clickedRight) {
+            collapsedDivR.style.minWidth = "1px"
+            collapsedDivR.style.width = "auto";
+            clickedRight = false
+            console.log("clickedLeft",clickedLeft, "clickedRight", clickedRight);
+        }
+    }
+    
+})
+
+let clickedRight = false;
+
+collapsedDivR.addEventListener("click", function(){
+    if(clickedRight){
+        collapsedDivR.style.width = "49%"
+        collapsedDivR.style.minWidth = "1px"
+        clickedRight = false;
+        btnRight.style.display= "none";
+        console.log("clickedLeft",clickedLeft, "clickedRight", clickedRight);
+        if(clickedLeft == false){
+            collapsedDivL.style.width = "49%"
+            collapsedDivL.style.minWidth = "1px"
+            btnLeft.style.display= "none";
+        }
+    }else{
+        collapsedDivR.style.minWidth = "max-content"
+        clickedRight = true;
+        console.log("clickedLeft",clickedLeft, "clickedRight", clickedRight);
+        btnRight.style.display= "block";
+        btnLeft.style.display= "none";
+        if (clickedLeft) {
+            collapsedDivL.style.minWidth = "1px"
+            collapsedDivL.style.width = "auto";
+            clickedLeft =false
+            console.log("clickedLeft",clickedLeft, "clickedRight", clickedRight);
+        }
+    }
+})
