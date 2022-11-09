@@ -199,16 +199,31 @@ hr{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 4.5%;
+    padding-left: 4.5%;
+}
+.sect-3-questions{
+    display: flex;
+    flex-wrap: wrap;
+    height: 88%;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
+}
+.question-div{
+    width: 49%;
+    height: 27%;
+    border-radius: 6px;
+    padding: 2.5%;
+    border: 1px solid blue;
 }
 .question-bar{
     display: flex;
-    border: 1px solid blue;
-    width: 40%;
-    border-radius: 6px;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    height: 70%;
+    
 }
 .arrow-btn img{
     width: 8px;
@@ -217,4 +232,19 @@ hr{
 .arrow-btn{
     border: white;
     background: none;
+}
+.collapsing-text{
+    height: 0px;
+    width: 0px;
+    transition: height width 1s;
+    overflow: hidden;
+    display: none;
+}
+.text-appear{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
 }

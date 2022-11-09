@@ -158,3 +158,16 @@ function fillCards(){
 fillCards()
 
 //collapsing text
+let arrowBtn = document.getElementsByClassName("drop-down-arrow");
+let collText = document.getElementsByClassName("collapsing-text");
+console.log(arrowBtn);
+console.log(collText);
+
+function clickOnEachArrow(){
+    for(let i = 0; i < arrowBtn.length; i++){
+        arrowBtn[i].addEventListener("click", function(){
+            collText[i].classList.toggle("text-appear");
+        })
+    }
+}
+clickOnEachArrow();
