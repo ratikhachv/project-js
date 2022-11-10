@@ -247,3 +247,25 @@ collapsedDivR.addEventListener("click", function(){
         }
     }
 })
+
+
+//sect-6 round photos
+
+let roundImg = document.getElementsByClassName("round-img");
+let imgContainer = document.getElementsByClassName("sect-6-div");
+let imgText = document.getElementsByClassName("sect-6-text");
+
+for(let i = 0; i < roundImg.length; i++){
+    roundImg[i].onmouseover = function() {mouseOver(i)};
+    roundImg[i].onmouseout = function() {mouseOut(i)};
+}
+
+
+function mouseOver(i){
+    imgContainer[i].style.backgroundColor ="white";
+    imgText[i].style.opacity = "1";
+}
+function mouseOut(i){
+    imgContainer[i].style.backgroundColor ="transparent";
+    imgText[i].style.opacity = "0";
+}
