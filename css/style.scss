@@ -28,6 +28,7 @@ hr{
     align-items:baseline;
 }
 .account{
+    margin-right: 4px;
     color: #758BFD; 
     font-size: 12px;
     &:hover{
@@ -482,6 +483,7 @@ justify-content: space-between;
     transition: background-color 0.2s;
 }
 .sect-6-text{
+    width: 90%;
     height: 20%;
     justify-content: space-between;
     display: flex;

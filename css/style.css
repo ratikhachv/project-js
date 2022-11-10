@@ -34,6 +34,7 @@ hr {
 }
 
 .account {
+  margin-right: 4px;
   color: #758BFD;
   font-size: 12px;
 }
@@ -549,6 +550,7 @@ hr {
 }
 
 .sect-6-text {
+  width: 90%;
   height: 20%;
   justify-content: space-between;
   display: flex;
