@@ -27,6 +27,13 @@ hr{
     display: flex;
     align-items:baseline;
 }
+.account{
+    color: #758BFD; 
+    font-size: 12px;
+    &:hover{
+        color: magenta;
+    }
+}
 .nav-logo{
     display: flex;
     justify-content: space-between;
@@ -74,7 +81,7 @@ hr{
     display: flex;
     gap:1%;
     background-color: #F2F5F8;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
 }
 .sect-1-left{
     width: 56%;
@@ -194,24 +201,36 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
 }
 .sect-2-texts{
     display: flex;
     justify-content: space-between;
 }
+.see-all-news{
+    color:#8172D5;
+    font-size:small;
+    border-bottom: 0.5px solid #8172D5;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    &:hover{
+        color: magenta;
+    }
+}
 .sect-2-cards{
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
-    width: 82%;
+    width: 100%;
     height:95%;
-    flex-direction: column;
+    justify-content: space-between;
 }
 .card{
-    max-width: 27%;
+    width: 23%;
     height: 40%;
     padding: 1%;
+}
+.card-text{
+    color: #133B3A;
 }
 .card-body{
     display: flex;
@@ -235,7 +254,7 @@ hr{
     justify-content: space-between;
     padding-right: 4.5%;
     padding-left: 4.5%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 .sect-3-questions{
     display: flex;
@@ -280,7 +299,7 @@ hr{
 }
 .text-appear{
     display: block;
-    max-width: 40%;
+    max-width: 26.9%;
     width: fit-content;
     height: fit-content;
     position: absolute;
@@ -294,9 +313,10 @@ hr{
 }
 .sect-4{
     width: 100%;
-    height: 9%;
-    background-color: bisque;
+    height: 11%;
+    background-color:white;
     display: flex;
+    margin-bottom: 16%;
 }
 .that-pic-div{
     width: 50%;
@@ -314,15 +334,33 @@ hr{
     padding-left: 5%;
     padding-top: 3%;
     padding-bottom: 5%;
+    padding-right: 5%;
     gap: 10%;
     overflow: visible;
 }
-.see-all-news{
-    color:#8172D5;
-    font-size:small;
-    border-bottom: 0.5px solid #8172D5;
-    margin-bottom: 0;
-    box-sizing: border-box;
+.my-btn{
+    background-color: #758BFD;
+    border-color: #758BFD;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    &:hover {
+        background-color: blueviolet;
+        border-color:blueviolet;
+      }
+}
+.see-all{
+    display: flex;
+    flex-direction: row-reverse;
+    p{
+        font-size: xx-small;
+        color:#8172D5;
+        border-bottom: 0.5px solid #8172D5;
+        margin-bottom: 0;
+        &:hover{
+            color: magenta;
+        }
+    }
 }
 .register-div{
     display: flex;
@@ -337,7 +375,7 @@ hr{
 .register-form{
     height: 0px;
     width: 0px;
-    transition: height width 1s ease-in;
+    transition: width 1s ease-in;
     overflow: hidden;
 }
 .registerbtn {
@@ -371,16 +409,15 @@ height: 7.2%;
 display: flex;
 gap: 1.65%;
 margin: auto;
+margin-bottom: 5%;
 }
 .sect-5-left{
-background-color: lightblue;
 width: 49%;
-min-width: none;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 overflow: hidden;
-transition: width overflow 1s;
+transition: width 1s;
     img{
         width: 52vw;
         max-width: 750px;
@@ -389,13 +426,12 @@ transition: width overflow 1s;
 
 }
 .sect-5-right{
-    background-color: magenta;
     width: 49%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    transition: width overflow 1s;
+    transition: overflow 1s;
         img{
             width: 52vw;
             max-width: 750px;
@@ -409,6 +445,7 @@ transition: width overflow 1s;
 .btn-div{
 display: flex;
 width: 100%;
+height: 20%;
 justify-content: space-between;
     button{
         display: none;
@@ -423,9 +460,10 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     margin: auto;
+    justify-content: space-between;
+    margin-bottom: 3%;
 }
 .sect-6-container{
-    background-color: #04AA6D;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -439,10 +477,13 @@ justify-content: space-between;
     justify-content: space-around;
     width: 32%;
     height: 100%;
+    border-radius: 8px;
     background-color: transparent;
     transition: background-color 0.2s;
 }
 .sect-6-text{
+    height: 20%;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -475,4 +516,10 @@ footer{
     width: 50%;
     display: flex;
     justify-content: space-between;
+    color: white;
+    p{
+        &:hover{
+            color: black;
+        }
+    }
 }

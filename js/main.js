@@ -178,9 +178,20 @@ clickOnEachArrow();
 let regBtn = document.querySelector(".reg-4-free");
 let regForm = document.querySelector(".register-form");
 
+let clicked = 1
+
 regBtn.addEventListener("click", function(){
     regForm.classList.toggle("reg-form-appear")
+   
+    clicked *= -1;
+    if(clicked < 0){
+        regBtn.innerHTML = "Go back"
+    }else{
+        regBtn.innerHTML = "Register for free"
+    }
 })
+
+
 
 //uncollapsing photos
 
