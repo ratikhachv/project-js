@@ -43,9 +43,14 @@ hr{
 .search{
     display: flex;
     align-items: center;
+    width: 37%;
+    justify-content: flex-end;
 }
 #navi{
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
 .nav-link{
     color: #8172D5;
@@ -92,6 +97,9 @@ hr{
     overflow: hidden;
     // border-radius: 20px;
 }
+.container-fluid{
+    width: 55%;
+}
 .sect-1-right{
     width: 25%;
     display: flex;
@@ -126,6 +134,7 @@ hr{
     background-color: white;
     padding: 2%;
     border-radius: 8px;
+    
 }
 .slider-img{
     width: 100%;
@@ -229,9 +238,11 @@ hr{
     width: 23%;
     height: 40%;
     padding: 1%;
+    overflow: scroll;
 }
 .card-text{
     color: #133B3A;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
 }
 .card-body{
     display: flex;
@@ -244,6 +255,7 @@ hr{
 }
 .card-date{
     color: #69A3A2;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
 }
 .sect-3{
     width: 100%;
@@ -481,6 +493,9 @@ justify-content: space-between;
     border-radius: 8px;
     background-color: transparent;
     transition: background-color 0.2s;
+    img{
+        width: 70%;
+    }
 }
 .sect-6-text{
     width: 90%;
@@ -519,9 +534,21 @@ footer{
     display: flex;
     justify-content: space-between;
     color: white;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
     p{
         &:hover{
             color: black;
+        }
+    }
+}
+
+@media ( max-width:480px ){
+    .sect-2{
+        height: 15%;
+    }
+    .sect-1-right{
+        p{
+            display: none;
         }
     }
 }

@@ -51,10 +51,15 @@ hr {
 .search {
   display: flex;
   align-items: center;
+  width: 37%;
+  justify-content: flex-end;
 }
 
 #navi {
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .nav-link {
@@ -106,6 +111,10 @@ hr {
   flex-direction: column;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.container-fluid {
+  width: 55%;
 }
 
 .sect-1-right {
@@ -260,10 +269,12 @@ hr {
   width: 23%;
   height: 40%;
   padding: 1%;
+  overflow: scroll;
 }
 
 .card-text {
   color: #133B3A;
+  font-size: clamp(0.5rem, 0.8vw, 1rem);
 }
 
 .card-body {
@@ -279,6 +290,7 @@ hr {
 
 .card-date {
   color: #69A3A2;
+  font-size: clamp(0.5rem, 0.8vw, 1rem);
 }
 
 .sect-3 {
@@ -548,6 +560,9 @@ hr {
   background-color: transparent;
   transition: background-color 0.2s;
 }
+.sect-6-div img {
+  width: 70%;
+}
 
 .sect-6-text {
   width: 90%;
@@ -590,7 +605,17 @@ footer {
   display: flex;
   justify-content: space-between;
   color: white;
+  font-size: clamp(0.5rem, 0.8vw, 1rem);
 }
 .contacts p:hover {
   color: black;
+}
+
+@media (max-width: 480px) {
+  .sect-2 {
+    height: 15%;
+  }
+  .sect-1-right p {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
